@@ -43,7 +43,8 @@ const SignupForm = () => {
     try {
       const response = await axios.post(
         ` ${api_call}/userSignUp`,
-        formData
+        formData , 
+         { withCredentials: true }
       );
       setMessage("Registration successful! Please log in.");
       toast.success("Registration successful! Please log in.");
