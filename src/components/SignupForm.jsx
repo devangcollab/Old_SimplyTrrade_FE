@@ -41,11 +41,9 @@ const SignupForm = () => {
     setError(null);
 
     try {
-      const response = await axios.post(
-        ` ${api_call}/userSignUp`,
-        formData , 
-         { withCredentials: true }
-      );
+      const response = await axios.post(` ${api_call}/userSignUp`, formData, {
+        credentials: "include",
+      });
       setMessage("Registration successful! Please log in.");
       toast.success("Registration successful! Please log in.");
       setTimeout(() => {
