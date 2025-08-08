@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# PM2 process files
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by testing tools
+coverage/
+
+# Optional npm cache directory
+.npm/
+
+# Debug files
+debug.log
+
+# Build output
+dist/
+build/
+
+# React (create-react-app or Vite)
+client/node_modules/
+client/build/
+client/dist/
+client/.env
+client/.env.local
+
+# VS Code
+.vscode/
+.history/
+
+# MongoDB dump files
+dump/
+
+# IDE specific
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Mac system files
+*.DS_Store

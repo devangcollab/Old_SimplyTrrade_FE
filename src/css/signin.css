@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signin-container{
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.login-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* padding: 20px; */
+    align-items: center;
+   justify-content: center;
+    /* background-color: #f1f1f1; */
+}
+
+.login-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.login-title{
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #4C2D85;
+}
+
+.login-input{
+    width: 60%;
+    padding: 12px;
+    margin: 10px 0 ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-checkbox-container{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.login-checkbox{
+   accent-color: #4C2D85;
+}
+
+.login-btn{
+    padding: 10px 20px;
+    margin: 10px 0 20px 0;
+    width: 60%;
+    border-color: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #4C2D85;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-login a {
+    color: #4C2D85;
+}
+
+.login-img-container{
+    /* border:  2px solid red; */
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    
+}
+
+.login-img{
+    width: 70%;
+   
+}

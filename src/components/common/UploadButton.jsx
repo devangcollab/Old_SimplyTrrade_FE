@@ -1,0 +1,43 @@
+import * as React from "react";
+import { Box, Typography } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import Button from "@mui/material/Button";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+
+const VisuallyHiddenInput = styled("input")({
+  clip: "rect(0 0 0 0)",
+  clipPath: "inset(50%)",
+  height: 1,
+  overflow: "hidden",
+  position: "absolute",
+  bottom: 0,
+  left: 0,
+  whiteSpace: "nowrap",
+  width: 1,
+});
+
+const UploadButton = ({ handleChange, error }) => {
+  return (
+    <Box>
+      <Button
+        component="label"
+        role={undefined}
+        variant="contained"
+        fullWidth
+        tabIndex={-1}
+        startIcon={<CloudUploadIcon />}
+      >
+        Upload files
+        <VisuallyHiddenInput type="file" onChange={handleChange} />
+      </Button>
+
+      {error && (
+        <Typography color="error" variant="body2" mt={1}>
+          {error}
+        </Typography>
+      )}
+    </Box>
+  );
+};
+
+export default UploadButton;
