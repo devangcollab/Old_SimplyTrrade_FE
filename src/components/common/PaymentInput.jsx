@@ -18,7 +18,7 @@ const PaymentInput = ({ onChange, value, error, branchId, disabled }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://${api_call}/api/selectAccountByBranch`,
+          `${api_call}/selectAccountByBranch`,
           {
             params: { text: query, branchId: branchId }, // Query parameters
             headers: {

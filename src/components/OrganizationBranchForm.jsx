@@ -116,7 +116,7 @@ const OrganizationBranchForm = () => {
   const callApi = async () => {
     if (id) {
       const response = await axios.get(
-        `http://${api_call}/api/findOneOrganizationBranch/${id}`,
+        `${api_call}/findOneOrganizationBranch/${id}`,
         {
           headers: {
             "Content-Type": "application/json",

@@ -18,7 +18,7 @@ const OrgInput = ({ onChange, value, error, role, readOnlyExp }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://${api_call}/api/searchOrg`,
+          `${api_call}/searchOrg`,
           {
             params: { text: query }, // Query parameters
             headers: {

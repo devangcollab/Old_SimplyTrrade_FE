@@ -18,7 +18,7 @@ const CapacityInput = ({ onChange, value, deviceId, error }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://${api_call}/api/selectCapacityByDevice/${deviceId}`,
+          `${api_call}/selectCapacityByDevice/${deviceId}`,
           {
             params: { text: query }, // Query parameters
             headers: {

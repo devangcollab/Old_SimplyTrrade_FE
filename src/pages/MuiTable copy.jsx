@@ -17,7 +17,7 @@ const MuiTable = () => {
   const [orgData, setOrgData] = useState([]);
 
   const callApi = async () => {
-    const response = await axios.get(`http://${api_call}/api/allUserOrg`, {
+    const response = await axios.get(`${api_call}/allUserOrg`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${localStorage.getItem("token")}`,

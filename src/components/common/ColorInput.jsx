@@ -18,7 +18,7 @@ const ColorInput = ({ onChange, value, deviceId, error }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://${api_call}/api/selectColorByDevice/${deviceId}`,
+          `${api_call}/selectColorByDevice/${deviceId}`,
           {
             params: { text: query }, // Query parameters
             headers: {

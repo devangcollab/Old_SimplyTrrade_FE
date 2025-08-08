@@ -26,7 +26,7 @@ const OrgBranchInput = ({
 
       try {
         const response = await axios.get(
-          `http://${api_call}/api/selectOrganizationBranch/${selectedOrganization}`,
+          `${api_call}/selectOrganizationBranch/${selectedOrganization}`,
           {
             params: { text: query }, // Query parameters
             headers: {

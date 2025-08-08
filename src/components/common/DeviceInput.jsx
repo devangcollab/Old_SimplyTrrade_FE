@@ -18,7 +18,7 @@ const DeviceInput = ({ onChange, value, modelId, error, readOnlyExp }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://${api_call}/api/selectDeviceByModel/${modelId}`,
+          `${api_call}/selectDeviceByModel/${modelId}`,
           {
             params: { text: query }, // Query parameters
             headers: {

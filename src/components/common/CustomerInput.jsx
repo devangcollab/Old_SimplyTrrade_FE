@@ -28,7 +28,7 @@ const CustomerInput = ({
   const callApi = async () => {
     try {
       const response = await axios.get(
-        `http://${api_call}/api/findOneOrganizationBranch/${branchId}`,
+        `${api_call}/findOneOrganizationBranch/${branchId}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -79,7 +79,7 @@ const CustomerInput = ({
 
       try {
         const response = await axios.get(
-          `http://${api_call}/api/${apiPath}`,
+          `${api_call}/${apiPath}`,
           {
             params: { text: query },
             headers: {

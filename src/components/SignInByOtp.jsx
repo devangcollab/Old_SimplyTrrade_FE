@@ -31,7 +31,7 @@ const SignInByOtp = () => {
 
     try {
       const response = await axios.post(
-        `http://${api_call}/api/sendOtp`,
+        `${api_call}/sendOtp`,
         formData,
         {
           headers: {

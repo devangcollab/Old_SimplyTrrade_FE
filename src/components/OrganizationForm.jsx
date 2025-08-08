@@ -139,7 +139,7 @@ const OrganizationForm = () => {
 
   const callApi = async () => {
     if (id) {
-      const response = await axios.get(`http://${api_call}/api/org/${id}`, {
+      const response = await axios.get(`${api_call}/org/${id}`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,

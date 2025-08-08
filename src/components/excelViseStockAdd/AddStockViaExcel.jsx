@@ -19,7 +19,7 @@ const AddStockViaExcel = () => {
 
     try {
       const res = await axios.post(
-        `http://${api_call}/api/importExcel`, // Replace with your actual route
+        `${api_call}/importExcel`, // Replace with your actual route
         formData,
         {
           headers: {

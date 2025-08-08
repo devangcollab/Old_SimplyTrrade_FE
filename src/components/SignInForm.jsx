@@ -30,7 +30,7 @@ const SigninForm = () => {
 
     try {
       const response = await axios.post(
-        `http://${api_call}/api/userLogIn`,
+        `${api_call}/userLogIn`,
         formData
       );
 

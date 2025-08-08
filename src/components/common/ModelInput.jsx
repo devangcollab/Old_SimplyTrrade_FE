@@ -25,7 +25,7 @@ const ModelInput = ({
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://${api_call}/api/${
+          `${api_call}/${
             branchId
               ? `selectModelByBranch/${branchId}`
               : `selectModelByCat/${catId}`

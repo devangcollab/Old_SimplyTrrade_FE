@@ -18,7 +18,7 @@ const CategoryInput = ({ onChange, value, branchId, error }) => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `http://${api_call}/api/selectCategoryByBranch/${branchId}`,
+          `${api_call}/selectCategoryByBranch/${branchId}`,
           {
             params: { text: query }, // Query parameters
             headers: {

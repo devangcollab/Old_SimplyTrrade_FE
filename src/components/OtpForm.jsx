@@ -15,7 +15,7 @@ const OtpForm = () => {
 
     try {
       const response = await axios.post(
-        `http://${api_call}/api/verifyOtp`,
+        `${api_call}/verifyOtp`,
         { email: localStorage.getItem("email"), code: otp },
         {
           headers: {

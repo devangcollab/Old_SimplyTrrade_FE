@@ -42,7 +42,7 @@ const SignupForm = () => {
 
     try {
       const response = await axios.post(
-        `http://${api_call}/api/userSignUp`,
+        ` ${api_call}/userSignUp`,
         formData
       );
       setMessage("Registration successful! Please log in.");

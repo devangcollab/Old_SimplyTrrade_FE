@@ -35,7 +35,7 @@ const Header = () => {
   useEffect(() => {
     (async () => {
       try {
-        const response = await axios.get(`http://${api_call}/api/findUser`, {
+        const response = await axios.get(`${api_call}/findUser`, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -63,7 +63,7 @@ const Header = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        `http://${api_call}/api/createActivityLog`,
+        `${api_call}/createActivityLog`,
         { message: "logout" }, // Request body (empty if you're not sending any data)
         {
           headers: {
